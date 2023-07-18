@@ -1,0 +1,31 @@
+<h1>BAD HASH: 1ae58c6a8bf767ad96c84883c2009a2ede3efe5d</h1>
+<pre>
+--- lib.py	2023-07-18 18:36:41.928607 +0000
++++ lib.py	2023-07-18 18:36:42.311562 +0000
+@@ -4,16 +4,17 @@
+         self.a = a
+         self.b = b
+         self.c = c
+ 
+     def solve(self):
+-        d = self.b ** 2 - 4 * self.a * self.c
++        d = self.b**2 - 4 * self.a * self.c
+ 
+-        if d < 0: return []
++        if d < 0:
++            return []
+ 
+         if d == 0:
+             return [-self.b / (2 * self.a)]
+ 
+         return [
+-            (-self.b + d ** 0.5) / (2 * self.a),
+-            (-self.b - d ** 0.5) / (2 * self.a),
++            (-self.b + d**0.5) / (2 * self.a),
++            (-self.b - d**0.5) / (2 * self.a),
+         ]
+would reformat lib.py
+
+Oh no! 💥 💔 💥
+1 file would be reformatted, 1 file would be left unchanged.
+</pre>
